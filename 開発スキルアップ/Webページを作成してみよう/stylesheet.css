@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+/* 共通レイアウト */
+.heading {
+  font-size: 32px;
+  text-align: center;
+}
 .heading::after {
   content: "";
   display: block;
@@ -11,6 +16,14 @@
   height: 3px;
   margin: 8px auto 0;
   background-color: #ec715f;
+}
+.heading-text {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 16px;
+}
+.bg-gy {
+  background-color: #ECEFF1;
 }
 
 /* ヘッダー部分 */
@@ -59,20 +72,11 @@ nav li {
 /* ポートフォリオ部分 */
 .portfolio {
   color: #000000;
-  background-color: #ECEFF1;
 }
 .portfolio-area {
   width: 920px;
   margin: 0 auto;
   padding: 90px 0;
-  text-align: center;
-}
-.portfolio h2 {
-  font-size: 32px;
-}
-.portfolio p {
-  padding: 30px 0;
-  font-size: 16px;
 }
 .portfolio-box {
   display: flex;
@@ -117,13 +121,102 @@ nav li {
   margin: 0 auto;
   padding: 90px 0;
   color: #000000;
+}
+.feature-box-area {
+  display: flex;
+}
+.feature-box {
+  margin-right: 10px;
   text-align: center;
 }
-.feature-area h2 {
-  font-size: 32px;
+.feature-box:last-child {
+  margin-right: 0;
 }
-.feature-area p {
-  font-size: 16px;
-  padding: 30px 0;
+.feature-box i {
+  font-size: 60px;
+}
+.feature-box p {
+  padding: 0;
+  text-align: left;
+}
+.feature-box h3 {
+  padding: 10px 0;
+  font-size: 20px;
 }
 
+/* プロフィール部分 */
+.profile-area {
+  margin: 0 auto;
+  width: 1024px;
+  padding: 90px 0;
+}
+.profile-contents {
+  display: flex;
+}
+.profile-image {
+  width: 512px;
+  text-align: center;
+}
+.profile-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.profile-text {
+  width: 512px;
+}
+.profile-text h3 {
+  margin-bottom: 5px;
+}
+.profile-text p {
+  margin-bottom: 20px;
+}
+
+/* 連絡先部分 */
+.contact {
+  padding: 90px 0;
+}
+.contact-area {
+  width: 800px;
+  margin: 0 auto;
+}
+.contact-contents {
+  display: flex;
+}
+.contact-contents h3 {
+  margin-bottom: 5px;
+}
+.contact-contents p {
+  margin-bottom: 20px;
+}
+.adress {
+  width: 400px;
+}
+.adress-box {
+  width: 130px;
+  margin: 0 auto;
+}
+.adress a {
+  color: #000000;
+}
+.sns {
+  width: 400px;
+}
+.sns-box {
+  width: 200px;
+  margin: 0 auto;
+}
+.sns i {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+/* フッター部分 */
+footer {
+  height: 60px;
+  font-size: 16px;
+  color: #FAFAFA;
+  background-color: #ec715f;
+  line-height: 60px;
+  text-align: center;
+}
