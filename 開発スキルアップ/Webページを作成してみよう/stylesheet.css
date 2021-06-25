@@ -51,6 +51,7 @@ nav li {
   padding: 0 30px;
 }
 
+
 /* メインビジュアル部分 */
 .main-visual {
   height: 650px;
@@ -219,4 +220,122 @@ footer {
   background-color: #ec715f;
   line-height: 60px;
   text-align: center;
+}
+
+@media screen and (max-width:768px) {
+  /* ヘッダーの変更 */
+  .header-logo img {
+    height: 50px;
+  }
+  nav {
+    width: 90%;
+    height: 50px;
+  }
+  nav ul, nav li {
+    display: none;
+  }
+  .hamburger-icon {
+    border: 1px solid #FAFAFA;
+    height: 40px;
+    width: 40px;
+    margin: 5px 5px 5px auto;
+    padding: 10px 5px;
+  }
+  .hamburger-icon span {
+    margin: 0 auto;
+    width: 24px;
+    border: 1px solid #FAFAFA;
+    display: block;
+  }
+  .hamburger-icon span:nth-child(1),
+  .hamburger-icon span:nth-child(2) {
+    margin-bottom: 5px;
+  }
+  /* メインビジュアルの変更 */
+  .main-visual {
+    background-image: url(img/code.png);
+  }
+  .main-visual-area {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-visual-head {
+    font-size: 40px;
+  }
+  .main-visual-text {
+    font-size: 18px;
+  }
+  /* ポートフォリオの変更 */
+  .portfolio-area {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .portfolio-box {
+    display: block;
+  }
+  .portfolio-box .box {
+    margin: 0 auto 10px;
+  }
+  .portfolio-box .box:nth-child(3n) {
+    margin: 0 auto 10px;
+  }
+  .portfolio-box .box:nth-child(n+4) {
+    display: none;
+  }
+  .portfolio-box .box:nth-child(1) {
+    background-image: url(img/webcamp.png);
+  }
+  .portfolio-box .box:nth-child(2) {
+    background-image: url(img/websuku.png);
+  }
+  .portfolio-box .box:nth-child(3) {
+    background-image: url(img/webcamp-mother.png);
+  }
+  /* 特徴の変更 */
+  .feature-area {
+    width: 90%;
+  }
+  .feature-box-area {
+    display: block;
+  }
+  .feature-box {
+    margin: 0 auto 10px;
+  }
+  /* プロフィールの変更 */
+  .profile-area {
+    width: 90%;
+  }
+  .profile-contents {
+    display: block;
+    text-align: center;
+  }
+  .profile-image {
+    margin: 0 auto;
+  }
+  .profile-text {
+    margin: 0 auto;
+  }
+  .profile-text h3 {
+    margin: 20px auto 5px;
+  }
+  .profile-text p {
+    margin-bottom: 0;
+  }
+  /* 連絡の変更 */
+  .contact-area {
+    width: 90%;
+  }
+  .contact-contents {
+    display: block;
+    text-align: center;
+  }
+  .adress, .sns {
+    margin: 0 auto;
+  }
+  .sns i {
+    margin-right: 8px;
+  }
+  .sns i:last-child {
+    margin-right: 0;
+  }
 }
